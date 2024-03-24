@@ -1,0 +1,22 @@
+.recipe {
+    width:32%;
+    height: auto;
+    border: 1px solid #8c8b8b;
+    border-radius: .5rem;
+    margin-bottom: 50px;
+    box-shadow: .1em .1em 0.5em rgb(194, 194, 194);
+}
+
+.label {
+    font-size: 20px;
+}
+
+.ingredients > font {
+    text-align: left;
+    color:aqua;
+};
+
+.ingredient {
+    text-align: left;
+    color:aqua;
+};

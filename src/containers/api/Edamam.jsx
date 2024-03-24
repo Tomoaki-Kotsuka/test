@@ -4,6 +4,7 @@ import axios from "axios" ;
 // components
 import Recipe from '../Recipe'
 import deeplTranslate from './DeepL';
+import './Edamam.css' 
  
 const Edamam = () => {
  
@@ -64,11 +65,13 @@ const Edamam = () => {
  return (
    <>
      {/* <>Edamam</> */}
-     <form onSubmit={getSearch}>
-       <input type='text' value={search} onChange={updateSearch} />
-       <button type='submit'>検索</button>
-     </form>
-     <div>
+     <div className='searchForm'> 
+      <form  onSubmit={getSearch}>
+        <input type='text' value={search} onChange={updateSearch} />
+        <button type='submit'>検索</button>
+      </form>
+     </div>
+     <div className="recipes">
        {recipes.map(recipe => {
             console.log(recipe)
             return(

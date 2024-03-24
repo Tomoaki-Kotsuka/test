@@ -1,10 +1,12 @@
 import React from 'react'
- 
+import './Recipe.css' 
+
 const Recipe = (props) => {
 //  console.log(props.ingredients)
   return (
+    <div className='recipe'>
         <div key={props.label}>
-        <h1>{props.label}</h1>
+        <h1 className='label'>{props.label}</h1>
         <img src={props.image} alt='' />
         <p> エネルギー： {props.calories} cal</p>
         <p>
@@ -13,11 +15,11 @@ const Recipe = (props) => {
         <p>
             <strong>材料（{props.yield}人分）</strong>
         </p>
-        <ol>
+        <ol className='ingredients' >
             {props.ingredients.map(ingredient => {
             //  console.log(ingredient.text)
             return (
-                <li key={ingredient + ingredient.foodId}>
+                <li className='ingredient' key={ingredient + ingredient.foodId}>
                     {ingredient}
                 </li>
             )
@@ -25,6 +27,7 @@ const Recipe = (props) => {
             )}
         </ol>
         </div>
+    </div>
   )
 }
  

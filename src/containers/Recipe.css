@@ -13,5 +13,7 @@
 
 .ingredient {
     text-align: left;
+    list-style-type: disc;
     color:aqua;
+
 };

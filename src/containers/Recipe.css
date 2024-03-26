@@ -5,11 +5,11 @@
     border-radius: .5rem;
     margin-bottom: 50px;
     box-shadow: .1em .1em 0.5em rgb(194, 194, 194);
-}
+};
 
 .label {
     font-size: 20px;
-}
+};
 
 .ingredient {
     text-align: left;
@@ -17,3 +17,9 @@
     /* color:aqua; */
 
 };
+
+.btn {
+    background-color: blueviolet;
+    border-radius: .5rem;
+    margin-bottom: 10px;
+}

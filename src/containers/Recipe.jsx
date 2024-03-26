@@ -2,16 +2,16 @@ import React from 'react'
 import './Recipe.css' 
 
 const Recipe = (props) => {
-//  console.log(props.ingredients)
+ console.log(props.shareAs)
   return (
     <div className='recipe'>
-        <div key={props.label}>
+        <div key={props.label}></div>
         <h1 className='label'>{props.label}</h1>
         <img src={props.image} alt='' />
         <p> エネルギー： {props.calories} cal</p>
-        <p>
+        {/* <p>
             <strong>栄養成分（1人分）</strong>
-        </p>
+        </p> */}
         <p>
             <strong>材料（{props.yield}人分）</strong>
         </p>
@@ -26,6 +26,8 @@ const Recipe = (props) => {
             }
             )}
         </ol>
+        <div className='btn'>
+            <a href={props.shareAs} target="blank">詳細ページ</a>
         </div>
     </div>
   )

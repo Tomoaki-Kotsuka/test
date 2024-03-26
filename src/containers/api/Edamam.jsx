@@ -73,7 +73,7 @@ const Edamam = () => {
      </div>
      <div className="recipes">
        {recipes.map(recipe => {
-            console.log(recipe)
+            // console.log(recipe)
             return(
                 <Recipe
                 key={recipe.recipe.label}
@@ -82,6 +82,7 @@ const Edamam = () => {
                 image={recipe.recipe.image}
                 ingredients={recipe.recipe.ingredientLines}
 								yield={recipe.recipe.yield}
+                shareAs={recipe.recipe.shareAs}
                 />
             )
         })}

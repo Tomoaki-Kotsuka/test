@@ -18,8 +18,9 @@
 
 };
 
-.btn {
+.recipe > .btn {
     background-color: blueviolet;
     border-radius: .5rem;
     margin-bottom: 10px;
-}
+    color: #e00707;
+};

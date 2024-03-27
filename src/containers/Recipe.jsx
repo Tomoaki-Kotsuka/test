@@ -1,5 +1,4 @@
 import React from 'react'
-import './Recipe.css' 
 
 const Recipe = (props) => {
  console.log(props.shareAs)

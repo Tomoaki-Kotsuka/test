@@ -14,12 +14,10 @@
 .ingredient {
     text-align: left;
     list-style-type: disc;
-    /* color:aqua; */
-
 };
 
-.recipe > .btn {
-    background-color: blueviolet;
+a {
+    background-color: rgb(229, 63, 26);
     border-radius: .5rem;
     margin-bottom: 10px;
     color: #e00707;

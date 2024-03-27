@@ -1,14 +1,19 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: 1280px; */
+  margin: 50px;
+  padding: 0;
   text-align: center;
 }
 
 .recipes {
   width:100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* place-items: center; */
+  gap: 50px;
+  margin-top: 20px;
 };
+
+
+

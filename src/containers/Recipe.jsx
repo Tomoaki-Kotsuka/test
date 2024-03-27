@@ -7,7 +7,7 @@ const Recipe = (props) => {
         <div key={props.label}></div>
         <h1 className='label'>{props.label}</h1>
         <img src={props.image} alt='' />
-        <p> エネルギー： {props.calories} cal</p>
+        <p className='calories'> エネルギー： {props.calories} cal</p>
         {/* <p>
             <strong>栄養成分（1人分）</strong>
         </p> */}

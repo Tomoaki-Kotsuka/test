@@ -5,3 +5,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }; */
+input {
+    width: 500px;
+}
+
+button {
+    background: rgb(174, 202, 193);
+    border-radius: 15%;
+    color: white;
+    margin-left: 10px;
+}
+
+.searchForm {
+    margin-top: 30px;
+}

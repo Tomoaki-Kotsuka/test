@@ -2,9 +2,9 @@ import React, { useState,useEffect } from 'react'
 import axios from "axios" ;
 
 // components
-import Recipe from '../Recipe'
+import Recipe from '../Recipe';
 import deeplTranslate from './DeepL';
-import './Edamam.css' 
+import "./Edamam.css";
  
 const Edamam = () => {
  
@@ -15,15 +15,19 @@ const Edamam = () => {
  
  // stateの作成
  const [search, setSearch] = useState("")
- const [query, setQuery] = useState("tomato")
+ const [query, setQuery] = useState("")
  const [recipes, setRecipes] = useState([])
  
  // APIの取得
  const getRecipes = () => {
-       axios.get(`https://api.edamam.com/search?q=${query}&app_id=${APPLICATION_ID}&app_key=${APPLICATION_KEY}`).then((res) => {
-        // console.log(res.data.hits);
-        setRecipes(res.data.hits);
-      });
+      if(query === "") {
+
+      } else {
+        axios.get(`https://api.edamam.com/search?q=${query}&app_id=${APPLICATION_ID}&app_key=${APPLICATION_KEY}`).then((res) => {
+         // console.log(res.data.hits);
+         setRecipes(res.data.hits);
+        });
+      }
  }
  
  const getSearch = e => {

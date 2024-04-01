@@ -21,7 +21,7 @@ const Edamam = () => {
  // APIの取得
  const getRecipes = () => {
       if(query === "") {
-
+        return ;
       } else {
         axios.get(`https://api.edamam.com/search?q=${query}&app_id=${APPLICATION_ID}&app_key=${APPLICATION_KEY}`).then((res) => {
          // console.log(res.data.hits);
@@ -38,9 +38,6 @@ const Edamam = () => {
 
 				const deeplSearch = (async () => {
 					const searchResult =  await deeplTranslate(search);
-				//  const searchRes = searchResult.map((res) => {
-				// 	return res
-				//  });
 					console.log(searchResult.translations[0].text);
 					setQuery(searchResult.translations[0].text);
 					setSearch('');
@@ -61,9 +58,8 @@ const Edamam = () => {
  
  useEffect(() => {
    getRecipes();
-   // eslint-disable-next-line react-hooks/exhaustive-deps
  }, [query] )
-//  console.log({recipes})
+
  
 
  return (
